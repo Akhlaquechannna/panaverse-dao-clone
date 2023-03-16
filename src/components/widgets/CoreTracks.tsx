@@ -2,7 +2,7 @@ import Wrapper from "@/components/shared/Wrapper";
 import Botton from "@/components/shared/Button";
 import QuarterBox from "@/components/shared/QuarterBox";
 
-const CoreTrackData = [
+export const CoreTrackData = [
   {
     header: "Quarter I",
     description: "CS-101: Object-Oriented Programming using TypeScript",
@@ -42,9 +42,10 @@ const CoreTracks = () => {
           </div>
         </div>
         {/* Boxes */}
-        <div className="my-20 flex flex-col md:flex-row gap-x-8 gap-y-6">
+        <div className="my-20 flex flex-col md:flex-row gap-x-10 py-16">
           {CoreTrackData.map((item, i) => (
             <QuarterBox
+              key={item.number}
               header={item.header}
               description={item.description}
               number={i + 1}
