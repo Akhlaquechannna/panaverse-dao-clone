@@ -1,5 +1,6 @@
 import CoreTracks from "@/components/widgets/CoreTracks";
 import Hero from "@/components/widgets/Hero"
+import ProgramOutcome from "@/components/widgets/ProgramOutcome";
 import SpecializedTrack from "@/components/widgets/SpecializedTrack";
 
 
@@ -14,6 +15,8 @@ export default function Home() {
         <CoreTracks/>
         {/* Specialized Track */}
         <SpecializedTrack />
+        {/* outcome section */}
+        <ProgramOutcome />
       </main>
     </>
   );
