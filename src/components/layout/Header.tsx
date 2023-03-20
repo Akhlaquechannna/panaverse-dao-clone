@@ -5,7 +5,7 @@ import Wrapper from "@/components/shared/Wrapper";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-10  bg-white">
+    <header className="sticky top-0 z-10 rounded-lg shadow-sm bg-white">
       <Wrapper>
         <div className="flex justify-between py-5 sticky top-0 items-center">
           {/* logo */}
@@ -20,6 +20,12 @@ const Header = () => {
             </li>
             <li>
               <Link href={"/Courses"}>Courses</Link>
+            </li>
+            <li>
+              <Link href={"/Sign up"}>Sign up</Link>
+            </li>
+            <li>
+              <Link href={"/About us"}>About us</Link>
             </li>
           </ul>
         </div>
